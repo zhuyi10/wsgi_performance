@@ -1,0 +1,25 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing Environment
+
+2 vagrant ubuntu/trusty64 servers
+55.55.55.5: wsgi server host
+55.55.55.6: testing host
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Testing Command
+
+ab -n 500 -c 50 "http://55.55.55.5:8081/"
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Results
+
+Server		Requests per second
+------------------------------------
+wsgiref		18
+netius		1660
+waitress	1900
+cherrypy	600
+gunicorn	1700
+uwsgi		2500
