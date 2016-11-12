@@ -5,6 +5,7 @@ Testing Environment <br />
 2 vagrant ubuntu/trusty64 servers <br />
 55.55.55.5: wsgi server host <br />
 55.55.55.6: testing host <br />
+All servers run with single worker. <br />
 <br />
 Testing Command <br />
 ---------------------------------------------------------- <br />
